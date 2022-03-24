@@ -17,13 +17,13 @@ int main()
 {
 	int sayi1, sayi2;
 
-	printf("Lütfen bir tam sayý giriniz (AltSýnýr): ");
+	printf("Lutfen bir tam sayi giriniz (AltSinir): ");
 	scanf("%d", &sayi1);
 
-	printf("\nLütfen bir tam sayý giriniz (Üst Sýnýr): ");
+	printf("\nLutfen bir tam sayi giriniz (UstSinir): ");
 	scanf("%d", &sayi2);
 
-	printf("\n%d ve %d arasýndaki tam sayýlar: \n", sayi1, sayi2);
+	printf("\n%d ve %d arasindaki tam sayilar: \n", sayi1, sayi2);
 	
 	printf("\n");
 
