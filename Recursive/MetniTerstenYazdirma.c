@@ -15,7 +15,7 @@ int ters()
 
 int main()
 {
-	printf("Lütfen Metninizi Giriniz: \n");
+	printf("Lutfen Metninizi Giriniz: \n");
 
 	ters();
 
