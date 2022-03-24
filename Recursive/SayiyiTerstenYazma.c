@@ -19,10 +19,10 @@ int main()
 {
 	int sayi;
 
-	printf("Lütfen bir tam sayý giriniz: ");
+	printf("Lutfen Bir Tamsayi Giriniz: ");
 	scanf("%d", &sayi);
 
-	printf("\nSayýnýn Tersi: %d", tersinialma(sayi));
+	printf("\nSayinin Tersi: %d", tersinialma(sayi));
 
 	return 0;
 }
