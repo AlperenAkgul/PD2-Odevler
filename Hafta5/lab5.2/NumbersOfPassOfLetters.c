@@ -4,19 +4,19 @@ int main(){
 	char array[1000];
 	char *p;
 	int harfSayisi = 0, count = 1;
-	int i;
+	int i, j;
 	
-	p = array;
 	
 	printf("Kelime Gir: ");
 	scanf("%s", &array);
+	p = array;
 	
 	while(*(p + harfSayisi) != '\0'){
 		harfSayisi++;
 	}
 	
 	for(i = 0; i < harfSayisi; i++){
-		for(int j = i + 1; j < harfSayisi; j++){
+		for(j = i + 1; j < harfSayisi; j++){
 			if(*(p+i) == *(p+j)){
 				count +=1;
 				*(p + j) = '0';

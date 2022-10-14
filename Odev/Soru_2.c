@@ -16,18 +16,32 @@ struct node{
 	struct node *next;
 };
 typedef struct node nd;
-nd *p, *q;
+nd *p, *q, *r;
 
 nd* fun(nd *head)
 {
-	p = head;
-	while(p->next != NULL){
-		q = p;
+	/*p = head;
+	q = p;
+	while(r->next != NULL){
 		p = p->next;
+		r = p->next;
+		p->next = q;
+		q = p;
 	}
-	p->next = head;
-	q->next = NULL;
-	return p;
+	head->next = NULL;
+	head = r;
+	return head;*/
+	struct node *p, *q, *r;
+	p = head;
+    while (p != NULL)
+    {
+        r  = p->next;  
+        p->next = q;   
+        q = p;
+        p = r;
+    }
+    head = q;
+    return head;
 }
 
 int main()
